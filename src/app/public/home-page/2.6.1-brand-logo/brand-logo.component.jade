@@ -1,0 +1,8 @@
+section-title.green([title]="'brand logo'")
+.container
+  #logo.row
+    a.col-md-4(*ngFor="let i of [1, 2, 3, 4, 5, 6]")
+      span
+        img.img-responsive(src="http://res.cloudinary.com/hjrjeoewr/image/upload/q_auto/v1502437206/brand-logo/{{i}}.png" alt="")
+
+

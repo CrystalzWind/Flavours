@@ -81,7 +81,6 @@
     ],
     "prefer-const": true,
     "quotemark": [
-
       "single"
     ],
     "radix": true,

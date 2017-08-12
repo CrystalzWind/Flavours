@@ -1,0 +1,9 @@
+.container
+  .row: .col-md-12: section-title([title]="'featured'")
+  .row
+   .col-md-12
+     .slider
+       ul.row
+         li.col-md-12(*ngFor="let item of items; let i = index"): a
+           img.img-responsive(src="http://res.cloudinary.com/hjrjeoewr/image/upload/q_auto:eco/v1502437233/item-slider/p{{ i+1 }}.jpg")
+           .name WooSingle

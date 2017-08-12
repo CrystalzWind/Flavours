@@ -1,0 +1,85 @@
+@import "mixins"
+
+#header-banner
+  background-color: $main-black
+  height: 35px
+nav
+  background-color: rgba(255, 255, 255, 0.2)
+  height: 74px
+  z-index: 200
+  #logo
+    background-color: $main-green
+    display: inline-block
+    padding: 4px 10px 10px
+    position: absolute
+    left: 0
+    top: -35px
+  #main-menu
+    margin: 0 0 0 193px
+    padding: 0
+    li
+      display: inline-block
+      padding: 30.5px 15px
+      margin: 0
+      a
+        +font(1.2em, white, $montserrat, bold)
+        text-transform: uppercase
+        letter-spacing: 2px
+      &:hover, &:active
+        background-color: $main-black
+    .active
+      a
+        color: $main-green
+  #nav-right
+    position: absolute
+    right: 0
+    top: 0
+    .block
+      height: 74px
+      width: 70px
+      font-size: 3em
+      display: inline-block
+      a
+        display: block
+        margin: 0 auto
+        text-align: center
+        line-height: 74px
+    #search
+      background-color: white
+      font-size: 1.8em
+    #cart
+      background-color: $main-red
+      color: white
+      a
+        text-align: left
+        span
+          width: 20px
+          height: 20px
+          line-height: 20px
+          background-color: white
+          position: absolute
+          top: 6px
+          text-align: center
+          z-index: 300
+          +font(10px, $main-red, $montserrat)
+          +rounded(20px)
+    #click
+      background-color: darken($main-green, 0.3%)
+      color: white
+    #click, #cart
+      i
+        z-index: 300
+        position: relative
+      &:hover
+        &:before
+          padding-bottom: 106%
+      &:before
+        content: ''
+        width: 100%
+        background-color: black
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 100
+        +transition(all 0.3s ease)
+

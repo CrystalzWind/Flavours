@@ -1,0 +1,33 @@
+@import "mixins"
+
+\:host
+  background-color: white
+  padding: 20px
+  #sorter
+    .view-mode
+      display: inline-block
+      a
+        background-color: white
+        border: 1px solid $main-gray
+        display: inline-block
+        position: relative
+        margin-right: 5px
+        width: 40px
+        height: 35px
+        i
+          font-size: 18px
+          position: absolute
+          left: 11px
+          top: 9px
+      a.active
+        background-color: $main-green
+        i
+          color: white
+    .result-count
+      display: inline-block
+      height: 35px
+      margin-left: 20px
+      clear: both
+      float: right
+      +font(1.1em, #333333, $serif)
+

@@ -1,0 +1,32 @@
+@import "mixins"
+
+\:host
+  .box
+    display: block
+    padding: 20px
+    margin: 20px -10px 20px -10px
+    position: relative
+    +rounded(3px)
+    .icon
+      border-right: 1px solid white
+      color: white
+      font-size: 25px
+      padding: 10px 0
+      padding-right: 20px
+      display: inline-block
+    .content
+      display: block
+      position: absolute
+      left: 85px
+      top: 25px
+      right: 10px
+      text-align: left
+      +font(1.6em, white, $montserrat, 600)
+  #free-shipping
+    background-color: $main-blue
+  #need-help
+    background-color: $main-purple
+  #money-back
+    background-color: $main-pink
+  #return-policy
+    background-color: $main-orange

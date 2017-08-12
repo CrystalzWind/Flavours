@@ -1,0 +1,47 @@
+@import "mixins"
+
+\:host
+  margin-bottom: 30px
+  .title
+    background-color: #fff
+    border: 4px double gray
+    display: inline-block
+    margin: 20px auto
+    padding: 15px
+    +font(1.8em, black, $roboto-slab, bold)
+    text-transform: uppercase
+    letter-spacing: 2px
+  #blog-info
+    background-color: white
+    padding: 20px
+    position: relative
+    text-align: left
+    +font(1.3em, black, $montserrat, bold)
+    .date
+      background-color: $main-red
+      border: 4px solid white
+      color: white
+      font-size: 12px
+      display: inline-block
+      padding: 10px 5px
+      position: absolute
+      top: -40px
+      text-align: center
+    .home-blog-title
+      margin-top: 10px
+      font-weight: 900
+    .home-blog
+      color: #777777
+      font-family: $serif
+      font-weight: normal
+      margin: 20px 0
+    .read-more-button
+      border: 1px #ddd solid
+      padding: 10px 20px
+      text-transform: uppercase
+      &:hover
+        border-color: red
+        background-color: $main-red
+        color: white
+
+

@@ -1,0 +1,12 @@
+.container
+  .row
+    .col-md-12
+      section-title.green([title]="'bestseller'")
+  .row
+    .col-md-12
+      .bestseller-side-banner
+        img.img-responsive(src="http://res.cloudinary.com/hjrjeoewr/image/upload/q_auto:eco/v1502437185/bestseller/side-banner.jpg")
+      .slider
+        ul.row
+          li.col-md-3(*ngFor="let product of products"): item-panel([product]="product")
+

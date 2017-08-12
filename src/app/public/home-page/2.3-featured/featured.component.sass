@@ -1,0 +1,33 @@
+@import "mixins"
+
+.slider
+  background-color: white
+  display: block
+  padding: 0
+  margin: 0
+  overflow: hidden
+  ul
+    display: block
+    padding: 10px
+    margin: 0
+    width: 100000px
+    li
+      display: inline-block
+      padding: 20px 10px
+      width: 150px
+      text-align: center
+      img
+        +rounded(100%)
+        border: 5px solid $main-gray
+        &:hover
+          animation: spin 0.5s
+      .name
+        +font(1.2em, $main-black, $montserrat, bold)
+        text-transform: uppercase
+        margin-top: 20px
+
+@-webkit-keyframes spin
+  0%
+    -webkit-transform: rotate(0deg)
+  100%
+    -webkit-transform: rotate(360deg)

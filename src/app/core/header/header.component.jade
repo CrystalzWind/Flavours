@@ -1,0 +1,28 @@
+.container-fluid
+  .row
+    #header-banner.col-md-12
+.container
+  .row
+    nav.col-md-12
+      #logo: img.img-responsive(src="http://res.cloudinary.com/hjrjeoewr/image/upload/q_auto:eco/v1502364142/logo_zry6wf.png" alt)
+      ul#main-menu
+        li(routerLinkActive="active", [routerLinkActiveOptions]="{exact: true}"): a(routerLink="home" ) home
+        li(routerLinkActive="active"): a(routerLink="products") products
+        li: a soups
+        li: a sand-witches
+        li: a fast food
+        li: a blog
+      #nav-right.row
+        #search.col.block
+          a: i.fa.fa-search
+        #cart.col.block
+          a
+            i.fa.fa-shopping-cart
+            span.item-count 0
+        #click.col.block
+          a: i.fa.fa-bars
+
+
+
+
+

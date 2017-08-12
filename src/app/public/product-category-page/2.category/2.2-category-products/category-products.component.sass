@@ -1,0 +1,29 @@
+@import "mixins"
+
+\:host
+  background-color: white
+  border-top: 4px double $main-gray
+
+  #product-grid
+    padding: 0
+    margin: 0
+    ul
+      padding: 0
+      margin: 0
+      li
+        display: inline-block
+  #page-numbers
+    border-top: 4px double $main-gray
+    display: block
+    padding: 15px 0
+    ul
+      text-align: center
+      padding: 0
+      li
+        border: 1px solid $main-gray
+        display: inline-block
+        padding: 8px
+        margin: 0 2px
+        +font(14px, $main-black, $serif)
+
+

@@ -1,0 +1,31 @@
+@import "mixins"
+
+\:host
+  background-color: $main-green
+  display: block
+  padding: 40px
+  text-align: center
+  .avatar
+    padding-bottom: 15px
+    img
+      +rounded(100%)
+      border: 5px solid darken($main-green, 10%)
+      margin: 0 auto
+  .testimonials
+    padding-bottom: 15px
+    +font(1.4em, white, $serif)
+  .clients-author
+    +font(1.4em, white, $serif)
+
+ul
+  display: inline-block
+  padding: 0
+  margin: 40px 0
+  li
+    border: 1px solid white
+    display: inline-block
+    margin: 0 10px
+    width: 10px
+    height: 10px
+    +rounded(100%)
+

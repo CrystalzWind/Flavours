@@ -1,0 +1,9 @@
+.col-md-12
+  #product-grid.row
+    ul
+      li.col-md-4(*ngFor="let product of products"): item-panel([product]="product")
+  #page-numbers.row
+    ul
+      li 1
+      li 2
+      li 3

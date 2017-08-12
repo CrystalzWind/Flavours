@@ -1,0 +1,82 @@
+@import "mixins"
+
+#footer-inner
+  background-color: $main-black
+  .container
+    padding-top: 40px
+    background: url("http://res.cloudinary.com/hjrjeoewr/image/upload/q_auto/v1502364142/footer-img_xodal5.png") no-repeat bottom center
+    #text-widget
+      background-color: $main-green
+      text-align: left
+      +rounded(6px 6px 0 0)
+      padding: 40px
+      img
+        padding-bottom: 20px
+      p
+        +font(1.4em, white, $serif)
+        border-bottom: 1px dotted white
+        padding: 15px 5px
+        display: block
+        margin: 0
+      p.line
+        border-bottom: 1px solid white
+    .footer-column
+      h4
+        +font(1.6em, $main-green, $montserrat, normal)
+        padding-left: 35px
+      ul
+        list-style-type: circle
+        padding-left: 50px
+        li
+          +font(1.3em, $gray, $serif)
+          padding: 10px 0
+          cursor: pointer
+          &:hover
+            color: $main-green
+
+.social-links
+  text-align: center
+  li
+    display: inline-block
+    background-color: white
+    +rounded(100%)
+    width: 40px
+    height: 40px
+    padding-top: 10px
+    margin: 0 3px
+    color: $main-green
+    &:first-child
+      margin-left: -45%
+    &:hover
+      color: white
+
+  .facebook
+    &:hover
+      background-color: $facebook-color
+
+  .twitter
+    &:hover
+      background-color: $twitter-color
+
+  .instagram
+    &:hover
+      background-color: $instagram-color
+
+  .pinterest
+    &:hover
+      background-color: $pinterest-color
+
+  .linkedin
+    &:hover
+      background-color: $linkedin-color
+
+  .google
+    &:hover
+      background-color: $google-color
+
+
+#footer-bottom
+  background-color: $dark-black
+  p
+    +font(13px, #666, $serif)
+    padding: 10px 0

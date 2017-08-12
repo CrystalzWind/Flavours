@@ -1,0 +1,19 @@
+.container
+  .row
+    .title latest blog
+  .row
+    //latest-blog-item(*ngFor="let item of items; let i = index", [index]="i+1")
+    .col-md-4(*ngFor="let item of [1, 2, 3]; let i = index")
+      img.img-responsive(src="http://res.cloudinary.com/hjrjeoewr/image/upload/q_auto/v1502437266/latest-blog/{{i+1}}.jpg" alt="")
+      #blog-info
+        .date
+          | FEB 14
+          br
+          | 2016
+        a.home-blog-title LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+        .home-blog Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu dictum nec, condimentum sed sapien. Nullam lobortis nunc semper ipsum luctus ut viverra ante eleifend. Nunc pretium velit sed augue luctus accumsan.
+        a.read-more-button read more
+
+
+
+

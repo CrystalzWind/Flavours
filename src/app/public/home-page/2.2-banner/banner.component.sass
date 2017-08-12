@@ -1,0 +1,35 @@
+@import "mixins"
+
+#banner
+  position: relative
+  width: 100%
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: -140px
+    left: 0
+    width: 100%
+    height: 300px
+    background-color: $main-white
+    overflow: hidden
+    +skew(-4.5, 0)
+ul
+  margin-top: -80px
+  padding: 0
+  li
+    display: inline-block
+    padding: 0
+    &:hover
+      img
+        filter: opacity(60%)
+    &:nth-child(2)
+      top: -5.9%
+    &:nth-child(3)
+      top: -11.9%
+    &:nth-child(4)
+      top: -6.5%
+    &:nth-child(5)
+      top: -12.2%
+    &:nth-child(6)
+      top: -18%
